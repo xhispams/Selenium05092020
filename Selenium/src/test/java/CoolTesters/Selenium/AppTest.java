@@ -20,6 +20,13 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue()
     {
-        assertTrue( true );
+    	//Operadores Aritmeticas
+    	int x = 1;
+    	int y = 2;
+    	int resultado;
+    	
+    	resultado = x + y ;
+    	System.out.println(resultado);
+        assertTrue(true);
     }
 }
