@@ -76,8 +76,18 @@ public class App
         Select oSelect = new Select(driver.findElement(By.id("assignleave_txtLeaveType")));
         oSelect.selectByVisibleText("Maternity US");
         
-        
+//        directorio, name Robert, jobtitle Sales Manager,location eeuu, click en search, que se imprima el nombre completo de la persona
+//        Ejercicio
+
+//        1. log in en OrangeHR
+//        2. Click en Directory
+//        3. Buscar por "Robert"
+//        4. Job title: "Sales Manager"
+//        5. Location: "Unided States"
+//        6. Click Search
+//        Verificar el nombre completo de la persona
 //        Cerrar Navedagor
+        
         driver.close(); //Cierra la ventana actual del driver
         driver.quit(); // Cierra todas las ventanas creadas por el driver
         
