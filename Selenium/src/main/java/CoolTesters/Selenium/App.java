@@ -36,6 +36,9 @@ public class App
         txtPassword.sendKeys("admin123");
         Thread.sleep(5000);
         btnLogin.click();
+//        String forgotPwdMsj = driver.findElement(By.xpath("//*[@id='forgotPasswordLink']/a")).getText();
+
+
         
 //        Validación de Home Page
         String urlDashboard = driver.getCurrentUrl();
