@@ -48,7 +48,7 @@ public class App
         
         
 //        findElements
-        List<WebElement> firstLevelMenu = driver.findElements(By.xpath("//*[@class='firstLevelMenu']"));
+        List<WebElement> firstLevelMenu = driver.findElements(By.xpath("//*[@class='firstLevelMenu']/b"));
         System.out.println("úmero de elementos: " + firstLevelMenu.size());
         String primerMenu = firstLevelMenu.get(0).getText();
         System.out.println(primerMenu);
