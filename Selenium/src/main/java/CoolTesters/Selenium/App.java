@@ -2,6 +2,7 @@ package CoolTesters.Selenium;
 
 import java.io.File;
 import java.nio.file.Paths;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -44,6 +45,21 @@ public class App
         String urlDashboard = driver.getCurrentUrl();
         System.out.println("URL : "+ urlDashboard);
         urlDashboard.contains("/dashborad");//Compara que contenga /dashboard
+        
+        
+//        findElements
+        List<WebElement> firstLevelMenu = driver.findElements(By.xpath("//*[@class='firstLevelMenu']"));
+        System.out.println("úmero de elementos: " + firstLevelMenu.size());
+        String primerMenu = firstLevelMenu.get(0).getText();
+        System.out.println(primerMenu);
+        String segundoMenu = firstLevelMenu.get(1).getText();
+        System.out.println(segundoMenu);
+        
+        	for(int i = 0; i<firstLevelMenu.size();i++) {
+        		System.out.println("Los Menú son: "+firstLevelMenu.get(i).getText());
+        		
+        	}
+        
         
 //        Métodos de Navegación
 //        driver.navigate().back();
